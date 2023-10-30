@@ -25,5 +25,5 @@ document.getElementById('animated-button').addEventListener('click', function(ev
     // After a delay, open the link
     setTimeout(() => {
         window.location.href = this.getAttribute('href');
-    }, 1000); // Adjust the delay (in milliseconds) as needed
+    }, 5000); // Adjust the delay (in milliseconds) as needed
 });
