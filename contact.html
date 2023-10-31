@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halloween Extravaganza</title>
     <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	
@@ -18,25 +19,55 @@
         </ul>
     </nav>
 	
-    <form action="/">
-        <h1>Contact Us</h1>
-        <div class="info">
-          <input class="fname" type="text" name="name" placeholder="Full name">
-          <input type="text" name="name" placeholder="Email">
-          <input type="text" name="name" placeholder="Phone number">
-        </div>
-        <p>Message</p>
-        <div>
-          <textarea rows="4"></textarea>
-        </div>
-        <button type="submit" href="/">Submit</button>
-      </form>
+	
+	
+	 <div id="form">
+                <h2>Complete the form below to sign up for our Newsletter!</h2>
+                
+                <form class="form-grid" method="get">
+					<img src="images/5144861467_86f1655a75_b.jpg" alt="pumpkins">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName" required>
+                        
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </fieldset>
+					
+                        <input type="submit" id="submit" value="Submit" class="btn">
+                    
+                </form>
+            </div>
 	
 	<div class="contactpara">
 		<h3>Located in the deep forests of Massena, NY</h3>
-		<img src="images/location.png" alt="map showing the location of our haunted attractions" height="442">
+		<img src="images/location.png" alt="map showing the location of our haunted attractions" width="900">
 	</div>
 	
+	<div class="socialmedia">
+		<a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+		<a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+	</div>
+		
+	<footer>
+		<div class="copyright">
+	 <h4>&copy; 2023 Copyright Mason Goolden and Eligha Acevedo - Seaway Software Developers. All rights reserved.</h4>
+        <h4>Last Update: 10/30/2023</h4>
+<h4>Copyright All Rights Reserved, Canva®</h4>
+        <h5>This site is for educational purposes only!!</h5>
+<h4>**FAIR USE**</h4>
+
+<h6>Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research.<br>Fair use is a use permitted by copyright statute that might otherwise be infringing. <br>Non-profit, educational or personal use tips the balance in favor of fair use. </h6>
+			</div>
+	</footer>
+
 	
     <script src="script.js"></script>
 </body>
