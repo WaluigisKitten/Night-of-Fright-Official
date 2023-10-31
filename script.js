@@ -15,3 +15,15 @@ document.addEventListener("DOMContentLoaded", function() {
     spookyButton.addEventListener("click", triggerSpookySurprise);
 });
 
+// script.js
+document.getElementById('animated-button').addEventListener('click', function(event) {
+    event.preventDefault(10000); // Prevent the default link behavior
+    
+    // Add an animation class to trigger the animation
+    this.classList.add('animate');
+    
+    // After a delay, open the link
+    setTimeout(() => {
+        window.location.href = this.getAttribute('href');
+    }, 5000); // Adjust the delay (in milliseconds) as needed
+});
